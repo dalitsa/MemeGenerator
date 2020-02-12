@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeMeGeN</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    
+<body onload="init()">
+    <div class="pageContainer flex row-reverse space-between">
+    <div class="interact flex column">
+        <input class="strokeColor" type="color" onchange="getStorkeColor(event)" />
+        <input class="fillColor" type="color"  onchange="getFillColor(event)"/>
+        <input class="line line1" type="text" placeholder="Enter first meme line" onkeydown="drawText(1)"/>
+        <input class="line line2" type="text" placeholder="Enter second meme line" onkeydown="drawText(2)"/>
+        <input class="line line3" type="text" placeholder="Enter second meme line" onkeydown="drawText(3)"/>
+        <input class="line line4" type="text" placeholder="Enter second meme line" onkeydown="drawText(4)"/>
+        <input class="line line5" type="text" placeholder="Enter second meme line" onkeydown="drawText(5)"/>
+        
+        <!-- <select class="shape" onchange="getShape(event)">
+            <option value="triangle">Triangle</option>
+            <option value="circle">Circle</option>
+            <option value="rectangle">Rectangle</option>
+            <option value="text">Text</option>
+            <option value="line">Line</option>
+          </select> -->
+          <button class="clear" onclick="clearCanvas()">Clear</button>
+          <!-- <button class="fontSizeUp" onclick="fontSize(1)">^</button>
+          <button class="fontSizeDown" onclick="fontSize(-1)">V</button> -->
+        <a href="#" onclick="downloadCanvas(this)" download="">Download</a>
+    
+    </div>
+    
+        <div class="canvas-container">
+            <canvas id="my-canvas" height="450" width="450"  style="border: 1px solid black;"></canvas>
+            <!-- onmousemove="drawShapeLine(event)" onmouseout="clear()" onmousedown="draw(event)" -->
+        </div>
+        <img src="img/meme-imgs-square/1.jpg" alt="" style="display: none;">
+    
+    </div>
+    <section class="imgContainer flex wrap" >
+        <img id="1" src="img/meme-imgs-square/1.jpg" alt="" onclick="getMeme(id)"/>
+        <img src="img/meme-imgs-square/2.jpg" alt="" />
+    </section>
+    
+
+
+    <script src="js/storage-service.js"></script>
+    <script src="js/memeGen-service.js"></script>
+    <script src="js/i18n-services.js"></script>
+    <script src="js/memeGen-controller.js"></script>
+</body>
+</html>
