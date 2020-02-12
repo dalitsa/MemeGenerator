@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+/******************************************************Layout */
+
+.line3{
+    display: none;
+}
+.line4{
+    display: none;
+}
+.line5{
+    display: none;
+}
+
+body{
+    margin: 0;
+}
+
+canvas{
+    display: block;
+    /* margin: 20px auto; */
+}
+
+.canvas-container{
+    background-color: white;
+    margin: auto;
+    /* padding: 20px; */
+    width: 500vw;
+    height: 500px;
+    border: 1px solid red;
+}
+
+
+/******************************************************* HELPERS */
+
+.flex{
+    display:flex;
+}
+
+.clean-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo {
+    font-family: eurofbold, serif;
+    font-size: 2.5rem;
+  }
+  
+  .logo span {
+    color: #58c93a;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-1 {
+    flex: 1;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .space-between {
+    justify-content: space-between;
+  }
+  
+  .space-around {
+    justify-content: space-around;
+  }
+  
+  .row-reverse{
+      flex-direction: row-reverse;
+  }
+
+  .column{
+      flex-direction: column;
+  }
